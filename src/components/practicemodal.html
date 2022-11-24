@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="high.css">
+    <title>modal</title>
+</head>
+<body onscroll="colorchange()">
+    <nav>
+        <ul id="nav">
+            <li class="li">START BOOTSTRAP</li>
+            <li class="li">PORTFOLIO</li>
+            <li class="li">ABOUT</li>
+            <li class="li">CONTACT</li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div class="mainframe">
+    <div class="divimg" onclick="modalimg('cabin.png','CABIN')"><img src="cabin.png" class="img-fluid"></div>
+    <div class="divimg" onclick="modalimg('cake.png','CAKE')"><img src="cake.png" class="img-fluid"></div>
+    <div class="divimg" onclick="modalimg('circus.png','CIRCUS')"><img src="circus.png" class="img-fluid"></div>
+    <div class="divimg" onclick="modalimg('game.png','GAME')"><img src="game.png" class="img-fluid"></div>
+    <div class="divimg" onclick="modalimg('safe.png','SAFE')"><img src="safe.png" class="img-fluid"></div>
+    <div class="divimg" onclick="modalimg('submarine.png','SUBMARINE')"><img src="submarine.png" class="img-fluid"></div>
+    </div>
+
+    <div class="modal" id="mainmodal" >
+        <div class="innermodal" id="inner" onclick="stay()" >
+            <button class="closebtn" onclick="closemodal()">X</button>
+            <img class="addimg" id="dropimg">
+            <h2 id="head"></h2>
+            <button class="downclosebtn" onclick="closemodal()">CLOSE</button>
+        </div>
+    </div>
+
+    <script>
+        function modalimg(img,title){
+            document.getElementById("mainmodal").style.display="block";
+            document.getElementById("dropimg").setAttribute("src",img);
+            document.getElementById("head").innerHTML = title;
+        }
+        window.addEventListener('click',outsideclick)
+        function outsideclick(e){
+            if(e.target == document.getElementById("mainmodal") ){
+            document.getElementById("mainmodal").style.display="none"
+        }
+        }
+        function closemodal(){
+            document.getElementById("mainmodal").style.display = "none";
+        }
+        function colorchange(){
+            if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            document.getElementById("nav").setAttribute("class",'ligunoir')
+            }
+            else{
+                document.getElementById("nav").setAttribute("class",'li')
+        }
+        }
+    
+    </script>
+</body>
+</html>

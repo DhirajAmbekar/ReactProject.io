@@ -1,0 +1,277 @@
+.home{
+    height: 100vh;
+    width:100%;
+    background-image: url("../assets/2454628.webp");
+    background-size:cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+    div{
+    h1{
+        color: white;
+        font-size: 50px;
+        margin: 0 2rem;
+        text-shadow: 0 0 6px rgb(69, 71, 199);
+    }
+    p{
+        color:white;
+        font-size: 30px;
+        margin: 0 2rem;
+        text-shadow: 0 0 6px rgb(69, 71, 199);
+    }
+    }
+    .img-home{
+        height: 400px;
+        width: 490px;
+        background-image: url("../assets/hero.png");
+        background-size: cover;
+        margin: 0 2rem;
+        animation:imgup 0.7s linear infinite alternate;
+    }
+    @keyframes imgup {
+        to{
+            transform: translateY(-5px);
+        }
+    }
+}
+
+
+.Down-home{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    img{
+        height:55px;
+        width:120px;
+        margin: 0 2rem;
+        animation:imgup 0.7s linear infinite alternate;
+    }
+}
+
+
+.home-about{
+    width: 100%;
+    background-image:linear-gradient(to left, black , rgb(13, 74, 153));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 0 0 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    div{
+        height: 500px;
+        width: 600px;
+        overflow: hidden;
+        margin: auto;
+
+        h1{
+            color:aqua;
+            font-size: 50px;
+            text-shadow: 2px 2px 1px white;
+        }
+        p{
+            font-size: 25px;
+            color: white;
+            text-shadow: 2px 2px 1px rgb(0, 0, 0);
+        }
+        img{
+            height: fit-content;
+            width: 100%;
+            animation:imgup 0.7s linear infinite alternate;
+        }
+    }
+}
+
+
+footer{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h4{
+            color:white;
+            font-size: 40px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .icons{
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 50%;
+            margin: 0 1rem;
+            animation:imgup 0.7s linear infinite alternate;
+
+            &:hover{
+                background-color: black;
+                color: white;
+                box-shadow: 0 0 16px white;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+.service{
+    background-image: linear-gradient(to right, blue,red);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+    .card-service{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .card{
+            padding: 50px 30px;
+            margin: 2rem 1rem;
+            background-color: wheat;
+            box-shadow: 10px 10px 1px black;
+            &:hover{
+                box-shadow: 0px 0px 5px black;
+            }
+        .icon-serv{
+            font-size: 50px;
+        }
+       }
+    }
+}
+.main-contact{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem 1rem;
+
+    h3{
+        font-size: 23px;
+    }
+    p{
+    font-size:20px
+    }
+
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:2rem 0;
+
+
+    div{
+        margin: 0 1rem;
+        width:400px ;
+        height: 400px;
+        padding: 40px;
+        border: solid;
+        border-radius:0 20% 0 20%;
+        background-image:linear-gradient(yellow,rgb(6, 241, 210));
+        box-shadow: 10px 10px 1px rgb(253, 1, 1);
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items:left;
+            margin: auto;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            label{
+                font-size: 30px;
+                margin: 0.5rem 0;
+            }
+            input{
+                height: 30px;
+
+                &::placeholder{
+                    padding: 0 0.6rem;
+                }
+                &:hover{
+                    box-shadow: 2px 2px 1px black;
+                }
+            }
+            textarea{
+                height: 100px;
+            }
+            button{
+                margin:auto;
+                text-align:center;
+                padding:15px 50px;
+                margin-top: 10px;
+                background-image: linear-gradient(yellow,pink);
+                border:none;
+                font-size: 19px;
+                &:hover{
+                    background-image: linear-gradient(pink,yellow);  
+
+                }
+            }
+        }
+        
+    }
+
+}
+
+
+
+@media screen and (max-width:425px){
+    .home{
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        div{
+            margin: 3rem 0;
+        }
+        .img-home{
+            height: 300px;
+            width: 400px;
+        }
+    }
+
+    .Down-home{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .home-about{
+        flex-direction: column;
+        p{
+            font-size: 20px;
+            width: 70%;
+        }
+        img{
+            height: 300px;
+            width: 80%;
+        }
+    }
+
+
+    footer{
+        flex-direction: column;
+    }
+
+    .card-service{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
