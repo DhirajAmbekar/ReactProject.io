@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ReactProject.io/static/css/main.af0df5c1.css",
+    "main.js": "/ReactProject.io/static/js/main.13bbf169.js",
+    "static/media/2454628.webp": "/ReactProject.io/static/media/2454628.7395f5bb6aa9a76402c0.webp",
+    "static/media/why-us.png": "/ReactProject.io/static/media/why-us.0b38b56dc7642af4e0af.png",
+    "static/media/hero.png": "/ReactProject.io/static/media/hero.593960b6732e1ce54f2b.png",
+    "index.html": "/ReactProject.io/index.html",
+    "main.af0df5c1.css.map": "/ReactProject.io/static/css/main.af0df5c1.css.map",
+    "main.13bbf169.js.map": "/ReactProject.io/static/js/main.13bbf169.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af0df5c1.css",
+    "static/js/main.13bbf169.js"
+  ]
+}
