@@ -10,7 +10,7 @@ function Header(){
         <nav>
             <h1>TECHNO<span>Point</span></h1>
             <div>
-            <HashLink to="/#home">Home</HashLink>
+            <Link to="/">Home</Link>
             <HashLink to="/#about">About</HashLink>
             <Link to="/services">Services</Link>
             <Link to="/contact">Contact</Link>
